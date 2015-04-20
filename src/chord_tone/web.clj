@@ -32,6 +32,10 @@
     (def third (notes (+ (.indexOf notes root) 4)))
     (def fifth (notes (+ (.indexOf notes root) 7)))
     (str"The chord Tones for a " root " major triad are " root ", " third " and " fifth "."))
+  (GET "/major-triad/"
+    {:status 200
+        :headers {"Content-Type" "text/plain"}
+        :body (pr-str ["USAGE - if you change the URL to say major-triad/C it will give you the chord tones for the C major triad. Only working for white keys at the moment."])})
   (ANY "*" []
        (route/not-found (slurp (io/resource "404.html")))))
 
