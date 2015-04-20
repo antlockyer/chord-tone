@@ -1,0 +1,8 @@
+(require 'chord-tone.web)
+(def server (chord-tone.web/-main))
+(require 'chord-tone.web)
+(def server (chord-tone.web/-main))
+quit
+(require 'chord-tone.web)
+(def server (chord-tone.web/-main))
+quit
