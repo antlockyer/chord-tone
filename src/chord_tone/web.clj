@@ -31,7 +31,7 @@
     (def notes ["C" "C#/Db" "D" "D#/Eb" "E" "F#/Gb" "G" "G#/Ab" "A" "A#/Bb" "B" "C" "C#/Db" "D" "D#/Eb" "E" "F#/Gb" "G" "G#/Ab" "A" "A#/Bb" "B"])
     (def third (notes (+ (.indexOf notes root) 4)))
     (def fifth (notes (+ (.indexOf notes root) 7)))
-    (str"The chord Tones for a " root " major triad are " root ", " third " and " fifth))
+    (str"The chord Tones for a " root " major triad are " root ", " third " and " fifth "."))
   (ANY "*" []
        (route/not-found (slurp (io/resource "404.html")))))
 
